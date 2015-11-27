@@ -1,0 +1,27 @@
+README
+======
+
+----------------------
+| Authors:           |
+|	Asma Berriri     |
+|	Mostafa Fateen   |
+|	Rebeca Machado   |
+|	Ramzi Sellami    |
+----------------------
+
+DESCRIPTION:
+============
+
+Tests for the Longest Common Substring project. The used tool was CUnit 
+documented in http://cunit.sourceforge.net/
+
+HOW TO RUN TESTS:
+=================
+
+Run these commands:
+
+	$> make
+    $> ./longest_common_substring_finder_tests && ./file_manager_tests
+
+Each test file will create a different executable so it's necessary to run both
+to have all tests at the same time. If needed, they can be run separately.

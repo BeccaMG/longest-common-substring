@@ -1,0 +1,62 @@
+README
+======
+
+----------------------
+| Authors:           |
+|	Asma Berriri     |
+|	Mostafa Fateen   |
+|	Rebeca Machado   |
+|	Ramzi Sellami    |
+----------------------
+
+DESCRIPTION:
+============
+
+This program is an implementation of the algorithm to find the Longest Common 
+Substring between two files given as input from stdin. Is intended to run in a
+linux environment only. The program is tested with the tool CUnit.
+
+CONTENT:
+========
+
+src/
+    -file_manager.c
+    -file_manager.h
+    -longest_common_substring.c
+    -longest_common_substring_finder.c
+    -longest_common_substring_finder.h
+    -Makefile
+tests/
+    -CUnit/
+    -file_manager_tests.c
+    -fileToRead1.txt
+    -fileToRead2.txt
+    -fileToRead3.txt
+    -longest_common_substring_finder_tests.c
+    -Makefile
+    -README
+html/
+config.doxy
+
+
+HOW TO RUN:
+===========
+
+Run these commands:
+
+    $> cd src/
+	$> make
+    $> ./longest_common_substring <file1> <file2>
+
+
+LIMITS:
+=======
+
+* The maximum input files should have no more than 2000 characters between both.
+This means is possible to have combinations like 2000 + 0, 1000+1000 or any
+alike. Segmentation fault appears after this limit.
+
+TESTS:
+======
+
+For more information about testing, see tests/README.
